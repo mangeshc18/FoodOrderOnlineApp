@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./src/components/Header";
+import Body from "./src/components/Body";
 
-const Header = () => {
-    return(
-        <h1>Hello React</h1>
-    )
-};
 
 const AppLayout = () => {
     return(
+        <>
         <Header />
+        <Body />
+        </>
+        
     )
 };
 
