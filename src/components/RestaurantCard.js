@@ -14,7 +14,7 @@ const RestaurantCard = (rest) => {
             <h2 className="text-2xl font-semibold text-slate-600 ">{name}</h2>
                 <h3 className="text-base font-semibold">{cuisines.join(", ")}</h3>
                 <h4 className="text-base font-semibold">
-                    <span className="text-lg mr-2 text-green-400"><i class="ri-star-line"></i></span>
+                    <span className="text-lg mr-2 text-green-400"><i className="ri-star-line"></i></span>
                 
                  {avgRating}</h4>
                 <h4 className="text-sm font-semibold">{areaName}</h4>
