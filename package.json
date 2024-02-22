@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "start": "parcel index.html"
+    
   },
   "author": "mangesh choudhari",
   "license": "ISC",
