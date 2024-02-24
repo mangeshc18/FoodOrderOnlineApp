@@ -1,26 +1,22 @@
 {
   "name": "onlinefoodorder",
   "version": "1.0.0",
-  "description": "online food order app",
+  "description": "",
   "scripts": {
-    "test": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html"
-    
   },
-  "author": "mangesh choudhari",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.11.0",
-    "postcss": "^8.4.35",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.11",
     "process": "^0.11.10",
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
-    "@remixicon/react": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.1"
+    "react-router-dom": "^6.22.1",
+    "remixicon": "^4.1.0"
   }
 }

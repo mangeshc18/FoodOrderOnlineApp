@@ -6,7 +6,7 @@ import RestaurantCategory from "./RestaurantCategory";
 
 const RestaurantMenu = () => {
   const [restMenu, setRestMenu] = useState(null);
-  const [showIndex, setShowIndex] = useState(0);
+  const [showIndex, setShowIndex] = useState(null);
 
   const { resId } = useParams();
 
@@ -34,7 +34,7 @@ const RestaurantMenu = () => {
 
   const { cloudinaryImageId, name, cuisines, avgRating } =
     restMenu.cards[2].card.card.info;
-  console.log(restMenu.cards[4].groupedCard.cardGroupMap.REGULAR);
+  // console.log(restMenu.cards[4].groupedCard.cardGroupMap.REGULAR);
 
   const category =
     restMenu.cards[4].groupedCard.cardGroupMap.REGULAR.cards.filter((c) => {
@@ -47,10 +47,12 @@ const RestaurantMenu = () => {
   return (
     <div className="w-[80%] mx-auto bg-white-100 mt-4">
       <div className=" flex  flex-col items-center gap-2 py-4">
-        <img className="w-48" src={REST_CARD_IMG + cloudinaryImageId} />
+        <img className="w-48 relative" src={REST_CARD_IMG + cloudinaryImageId} />
+        
         <h3 className="text-2xl font-bold">{name}</h3>
         <h2 className="text-xl font-semibold">{cuisines.join(", ")}</h2>
         <h2 className="font-semibold">{avgRating} Stars</h2>
+        
       </div>
 
       {category.map((cat, index) => {

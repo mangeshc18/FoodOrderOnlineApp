@@ -5,8 +5,12 @@ import { REST_API_LINK } from "./Constants";
 import { Link } from "react-router-dom";
 import RestaurantCarousal from "./RestaurantCarousal";
 import { WithPromotedRestaurant } from "./RestaurantCard";
+import { useContext } from "react";
+import userContext from "../utils/useContext";
 
 const Body = () => {
+    const {loggedInUser} = useContext(userContext);
+    console.log(loggedInUser);
     const [restList, setRestList]=useState([]);
     let [searchInput, setSearchInput] = useState("")
     const [filterRestList, setfilterRestList] = useState([]);
@@ -42,7 +46,8 @@ const fetchData = async () => {
         <>
 
         <div>
-            <h2 className="text-2xl font-semibold text-center mt-4">Whats On Your Mind ?</h2>
+            
+            <h2 className="text-2xl font-semibold text-center mt-4"> <span>{loggedInUser}</span>, Whats On Your Mind ?</h2>
         </div>
 
         

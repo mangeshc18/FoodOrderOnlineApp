@@ -44,23 +44,24 @@ const handleNextClick = () => {
 
   return (
     <>
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden ">
       <div
-        className="flex transition-transform ease-out duration-1000 gap-4  "
-        style={{ transform: `translateX(-${currentImageIndex * 20}%)` }}
+        className="flex transition-transform ease-out duration-500 gap-16  "
+        style={{ transform: `translateX(-${currentImageIndex * 10}%)` }}
       >
         {images}
-        {name}
+        
       </div>
 
     </div>
 
     <div className="flex flex-row-reverse gap-8 mt-4 px-4">
 
+    </div>
+    
     <button className="text-3xl bg-slate-50 p-2 rounded-full" onClick={handlePrevClick}><i className="ri-arrow-left-line"></i></button>
 
 <button className="text-3xl bg-slate-50 p-2 rounded-full hover:bg-white" onClick={handleNextClick}><i className="ri-arrow-right-line"></i></button>
-    </div>
     </>
   );
 };
